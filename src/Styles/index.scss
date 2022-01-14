@@ -1,0 +1,25 @@
+//Import alternate scss files
+@import "../Styles/colors.scss";
+
+.App {
+  font-family: 'Lato', sans-serif;
+  
+  .home-container {
+    height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .navbar-container {
+    display: flex;
+    width: 100vw;
+    height: 4rem;
+    background-color: $Primary-Blue;
+
+    .logo-container img{
+      height: 100%;
+      
+    }
+  }
+}
