@@ -5,7 +5,7 @@ const HeaderNav = () => {
     return (
       <div className="navbar-container">
         <div className="logo-container">
-          <img src={logo} />
+          <img src={logo} alt="logo" />
         </div>
         <div className="company-title-home-nav"></div>
         <div className="site-links-container"></div>
