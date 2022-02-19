@@ -1,25 +1,83 @@
-//Import alternate scss files
+//Import Paletteernate scss files
 @import "../Styles/colors.scss";
+body {
+  background-color: $Palette-Off-White;
 
-.App {
-  font-family: 'Lato', sans-serif;
-  
-  .home-container {
-    height: 100%;
+  .App {
+    font-family: Verdana, sans-serif;
+
+    .footer-container {
+      border: 2px dotted black;
+      height: 20vh;
+      width: 100%;
+      margin-top: 2rem;
+    }
+
+    .home-container {
+      height: 100%;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-  }
 
-  .navbar-container {
-    display: flex;
-    width: 100vw;
-    height: 4rem;
-    background-color: $Primary-Blue;
+      .home-ad-container {
+        border: 1px solid $Palette-Secondary-Grey;
+        box-shadow: 5px 5px 5px $Palette-Secondary-Grey;
+        width: 80%;
+        height: 40vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
 
-    .logo-container img{
-      height: 100%;
-      
+    .navbar-container {
+      display: flex;
+      align-items: center;
+      width: 100vw;
+      height: 4rem;
+      background-color: $Palette-Dark-Teal;
+
+      .company-title-home-nav {
+        font-size: 2rem;
+        color: $Palette-Off-White;
+        margin-left: 1rem;
+      }
+
+      .page-links {
+        font-size: 1rem;
+        margin-left: 2rem;
+        max-height: 100%;
+        display: flex;
+        color: $Palette-Off-White;
+
+        .nav-mens,
+        .nav-womens,
+        .nav-kids,
+        .nav-sunglasses,
+        .nav-contacts {
+          padding: 1rem;
+        }
+        .nav-mens:hover,
+        .nav-womens:hover,
+        .nav-kids:hover,
+        .nav-sunglasses:hover,
+        .nav-contacts:hover {
+          background-color: $Palette-Pastel-Teal;
+          color: $Palette-Off-White;
+          cursor: pointer;
+        }
+      }
+    }
+    .cards-container {
+      display: flex;
+      justify-content: space-evenly;
+      width: 90vw;
+      margin: 2rem 0;
+
+      .card-container {
+        box-shadow: 5px 5px 5px grey;
+      }
     }
   }
 }
