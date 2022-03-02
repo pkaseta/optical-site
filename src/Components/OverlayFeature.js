@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "react-bootstrap";
 
 const OverlayFeature = () => {
   return (
@@ -12,8 +11,8 @@ const OverlayFeature = () => {
           lens treatment.
         </div>
         <div className="buttons">
-          <Button variant="secondary">Button 1</Button>
-          <Button variant="secondary">Button 2</Button>
+          <div className="primary-button">View All Frames</div>
+          <div className="secondary-button">Lens Options</div>
         </div>
       </div>
     </div>
