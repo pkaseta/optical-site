@@ -1,16 +1,18 @@
 //Import Paletteernate scss files
 @import "../Styles/colors.scss";
 body {
-  background-color: $Palette-Off-White;
+  background-color: whitesmoke;
 
   .App {
     font-family: Verdana, sans-serif;
+    width: 100vw;
 
     .footer-container {
-      border: 2px dotted black;
       height: 20vh;
-      width: 100%;
+      width: 100vw;
       margin-top: 2rem;
+      background: $Palette-Matte-Teal;
+      color: $Palette-Dark-Text;
     }
 
     .home-container {
@@ -20,14 +22,54 @@ body {
       align-items: center;
       justify-content: center;
 
-      .home-ad-container {
-        border: 1px solid $Palette-Secondary-Grey;
-        box-shadow: 5px 5px 5px $Palette-Secondary-Grey;
-        width: 80%;
-        height: 40vh;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+      .overlay-feature {
+        display: flex;
+        align-items: center;
+        margin: 3rem 0;
+        height: 600px;
+        width: 90%;
+        border: 2px solid gray;
+        border: 1px solid whitesmoke;
+
+        .media-container {
+          background-image: url(../Assets/glasses-city.jpeg);
+          background-position: center;
+          background-size: cover;
+          height: 100%;
+          width: 70%;
+          border-radius: 5px;
+        }
+
+        .text-card {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: flex-start;
+          z-index: 3;
+          left: 40%;
+          height: 300px;
+          width: 50%;
+          background: $Palette-Matte-Teal;
+          color: $Palette-Dark-Text;
+          border-radius: 5px;
+          // opacity: 0.9;
+          // box-shadow: 5px 5px 5px grey;
+          .title {
+            font-size: xx-large;
+            font-weight: 600;
+            margin-left: 10px;
+          }
+
+          .body {
+            font-size: larger;
+            margin-left: 10px;
+          }
+
+          .buttons {
+            margin-left: 10px;
+          }
+        }
       }
     }
 
@@ -36,11 +78,11 @@ body {
       align-items: center;
       width: 100vw;
       height: 4rem;
-      background-color: $Palette-Dark-Teal;
+      background-color: $Palette-Matte-Teal;
 
       .company-title-home-nav {
         font-size: 2rem;
-        color: $Palette-Off-White;
+        color: $Palette-Dark-Text;
         margin-left: 1rem;
       }
 
@@ -49,7 +91,7 @@ body {
         margin-left: 2rem;
         max-height: 100%;
         display: flex;
-        color: $Palette-Off-White;
+        color: $Palette-Dark-Text;
 
         .nav-mens,
         .nav-womens,
@@ -63,8 +105,8 @@ body {
         .nav-kids:hover,
         .nav-sunglasses:hover,
         .nav-contacts:hover {
-          background-color: $Palette-Pastel-Teal;
-          color: $Palette-Off-White;
+          background-color: $Palette-Gold;
+          color: $Palette-Matte-Teal;
           cursor: pointer;
         }
       }
