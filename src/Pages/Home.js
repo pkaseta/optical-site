@@ -2,6 +2,7 @@ import React from "react";
 import HomeCards from "../Components/HomeCards";
 import { MockData } from "../Assets/MockData";
 import OverlayFeature from "../Components/OverlayFeature";
+import MidPageAd from "../Components/MidPageAd/MidPageAd.js";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
           );
         })}
       </div>
+      <MidPageAd />
     </div>
   );
 };

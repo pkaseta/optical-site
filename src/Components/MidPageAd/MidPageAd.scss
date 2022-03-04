@@ -1,0 +1,15 @@
+@import "../../Styles/colors.scss";
+
+.mid-page-ad {
+  width: 95vw;
+  height: 600px;
+  background: $Palette-Matte-Teal;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .card {
+    text-align: center;
+    box-shadow: 3px 3px 3px $Palette-Dark-Teal;
+  }
+}
