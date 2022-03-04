@@ -7,6 +7,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <OverlayFeature />
+      <h1>New Releases</h1>
       <div className="cards-container">
         {MockData.map((frames) => {
           return (

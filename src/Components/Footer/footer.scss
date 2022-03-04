@@ -1,0 +1,70 @@
+@import "../../Styles/colors.scss";
+
+.footer-container {
+  height: 20vh;
+  width: 100vw;
+  margin-top: 2rem;
+  background: $Palette-Matte-Teal;
+  color: $Palette-Dark-Text;
+  display: flex;
+
+  .footer-section-company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+    border-right: 1px solid $Palette-Gold;
+
+    ul {
+      text-decoration: none;
+      justify-content: space-evenly;
+      height: 90%;
+      margin: 0;
+      li {
+        font-size: small;
+        height: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+          color: $Palette-Gold;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .footer-section-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+    border-right: 1px solid $Palette-Gold;
+
+    ul {
+      text-decoration: none;
+      justify-content: space-evenly;
+      height: 90%;
+      margin: 0;
+      li {
+        font-size: small;
+        height: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+          color: $Palette-Gold;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
