@@ -28,7 +28,7 @@ const MidPageAd = () => {
     <div className="mid-page-ad">
       {arCardImages.map((image) => {
         return (
-          <Card style={{ width: "30%", height: "400px" }}>
+          <Card style={{ width: "30%", height: "450px" }}>
             <Card.Img
               variant="top"
               src={image.src}
