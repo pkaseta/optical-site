@@ -3,6 +3,7 @@ import HomeCards from "../Components/HomeCards";
 import { MockData } from "../Assets/MockData";
 import OverlayFeature from "../Components/OverlayFeature";
 import MidPageAd from "../Components/MidPageAd/MidPageAd.js";
+import HomeAccordion from "../Components/HomeAccordion/HomeAccordion";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
         })}
       </div>
       <MidPageAd />
+      <HomeAccordion />
     </div>
   );
 };
