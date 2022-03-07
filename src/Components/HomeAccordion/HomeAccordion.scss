@@ -1,0 +1,20 @@
+@import "../../Styles/colors.scss";
+.home-accordion {
+  width: 95vw;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+
+  .accordion-button {
+    text-align: center;
+    background-color: $Palette-Matte-Teal;
+    color: $Palette-Light-Text;
+  }
+
+  .accordion-button:not(.collapsed) {
+    text-align: center !important;
+    background-color: $Palette-Gold;
+    color: $Palette-Dark;
+  }
+}
