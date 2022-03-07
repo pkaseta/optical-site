@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import DetroitSkyline from "../../Assets/detroit-skyline.jpeg";
+import BlueLenses from "../../Assets/blue-lenses.jpeg";
 import ARCoating from "../../Assets/ar-coating.jpeg";
 import Transitions from "../../Assets/transitions.jpeg";
 
@@ -9,9 +9,9 @@ import "../MidPageAd/MidPageAd.scss";
 const MidPageAd = () => {
   const arCardImages = [
     {
-      title: "In The Heart Of The D",
-      body: "All glasses proudly manufactured and shipped here in Metro Detroit",
-      src: DetroitSkyline,
+      title: "blue-Light Filtering",
+      body: "remove enough blue light for use on your computers and mobile devies",
+      src: BlueLenses,
     },
     {
       title: "Non-Glare Treatment",

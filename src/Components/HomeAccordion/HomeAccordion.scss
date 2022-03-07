@@ -7,13 +7,11 @@
   padding: 40px;
 
   .accordion-button {
-    text-align: center;
     background-color: $Palette-Matte-Teal;
     color: $Palette-Light-Text;
   }
 
   .accordion-button:not(.collapsed) {
-    text-align: center !important;
     background-color: $Palette-Gold;
     color: $Palette-Dark;
   }

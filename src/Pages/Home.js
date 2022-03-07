@@ -4,6 +4,7 @@ import { MockData } from "../Assets/MockData";
 import OverlayFeature from "../Components/OverlayFeature";
 import MidPageAd from "../Components/MidPageAd/MidPageAd.js";
 import HomeAccordion from "../Components/HomeAccordion/HomeAccordion";
+import BottomPageAd from "../Components/BottomPageAd/BottomPageAd";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       </div>
       <MidPageAd />
       <HomeAccordion />
+      <BottomPageAd />
     </div>
   );
 };
