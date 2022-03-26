@@ -1,6 +1,6 @@
 import React from "react";
 import HomeCards from "../Components/HomeCards";
-import { MockData } from "../Assets/MockData";
+import { MockData, PageData } from "../Assets/MockData";
 import OverlayFeature from "../Components/OverlayFeature";
 import MidPageAd from "../Components/MidPageAd/MidPageAd.js";
 import HomeAccordion from "../Components/HomeAccordion/HomeAccordion";
@@ -24,7 +24,12 @@ const Home = () => {
       </div>
       <MidPageAd />
       <HomeAccordion />
-      <BottomPageAd />
+      <BottomPageAd
+        featureImg={PageData.home.image}
+        altText={PageData.home.altText}
+        title={PageData.home.title}
+        body={PageData.home.body}
+      />
     </div>
   );
 };

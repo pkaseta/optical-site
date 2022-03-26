@@ -1,20 +1,16 @@
 import React from "react";
 
-import DetroitSkyline from "../../Assets/detroit-skyline.jpeg";
-
 import "../BottomPageAd/BottomPageAd.scss";
 
-const BottomPageAd = () => {
+const BottomPageAd = ({ featureImg, altText, title, body }) => {
   return (
     <div className="bottom-page-ad">
       <div className="image-container">
-        <img src={DetroitSkyline} alt="Detroit Skyline" />
+        <img src={featureImg} alt={altText} />
       </div>
       <div className="detroit-card">
-        <div className="title">Brought to you from the D!</div>
-        <div classname="body">
-          All glasses manufactured and shipped right here in Metro Detroit!
-        </div>
+        <div className="title">{title}</div>
+        <div className="body">{body}</div>
       </div>
     </div>
   );

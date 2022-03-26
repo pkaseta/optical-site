@@ -1,3 +1,6 @@
+import DetroitSkyline from "../Assets/detroit-skyline.jpeg";
+import ManWithGlasses from "../Assets/man-with-glasses.jpeg";
+
 export const MockData = [
   {
     image:
@@ -24,3 +27,17 @@ export const MockData = [
     color: "Khaki",
   },
 ];
+export const PageData = {
+  home: {
+    image: DetroitSkyline,
+    altText: "Detroit Skyline",
+    title: "Brought to you from the D!",
+    body: "All glasses manufactured and shipped right here in Metro Detroit!",
+  },
+  mens: {
+    image: ManWithGlasses,
+    altText: "Man with glasses",
+    title: "Stylish mens frames",
+    body: "Shop our collection of mens glasses from buisiness, to casual!",
+  },
+};
