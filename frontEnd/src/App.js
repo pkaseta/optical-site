@@ -4,6 +4,7 @@ import Mens from "./Pages/Mens/Mens";
 import Home from "./Pages/Home";
 import Footer from "./Components/Footer/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./Styles/bootstrap.min(2).css";
 
 function App() {
   return (

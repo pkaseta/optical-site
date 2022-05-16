@@ -1,12 +1,10 @@
 //Import Paletteernate scss files
 @import "../Styles/colors.scss";
 body {
-  background-color: whitesmoke;
-
   .App {
-    font-family: Verdana, sans-serif;
-    width: 100vw;
-
+    .rating span {
+      margin: 0.1rem;
+    }
     .home-container {
       height: 100%;
       display: flex;
@@ -100,45 +98,6 @@ body {
               cursor: pointer;
             }
           }
-        }
-      }
-    }
-
-    .navbar-container {
-      display: flex;
-      align-items: center;
-      width: 100vw;
-      height: 4rem;
-      background-color: $Palette-Matte-Teal;
-
-      .company-title-home-nav {
-        font-size: 2rem;
-        color: $Palette-Light-Text;
-        margin-left: 1rem;
-      }
-
-      .page-links {
-        font-size: 1rem;
-        margin-left: 2rem;
-        max-height: 100%;
-        display: flex;
-        color: $Palette-Light-Text;
-
-        .nav-mens,
-        .nav-womens,
-        .nav-kids,
-        .nav-sunglasses,
-        .nav-contacts {
-          padding: 1rem;
-        }
-        .nav-mens:hover,
-        .nav-womens:hover,
-        .nav-kids:hover,
-        .nav-sunglasses:hover,
-        .nav-contacts:hover {
-          background-color: $Palette-Gold;
-          color: $Palette-Matte-Teal;
-          cursor: pointer;
         }
       }
     }
