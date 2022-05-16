@@ -106,9 +106,16 @@ body {
       justify-content: space-evenly;
       width: 90vw;
       margin: 2rem 0;
-
+      .add-to-cart {
+        &:hover {
+          background-color: $Palette-Gold;
+          color: $Palette-Dark;
+        }
+      }
       .card-container {
-        box-shadow: 5px 5px 5px grey;
+        &:hover {
+          box-shadow: 5px 5px 5px grey;
+        }
       }
     }
   }
