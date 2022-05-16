@@ -4,7 +4,7 @@ import BlueLenses from "../../Assets/blue-lenses.jpeg";
 import ARCoating from "../../Assets/ar-coating.jpeg";
 import Transitions from "../../Assets/transitions.jpeg";
 
-import "../MidPageAd/MidPageAd.scss";
+import "./MidPageAd.scss";
 
 const MidPageAd = () => {
   const arCardImages = [

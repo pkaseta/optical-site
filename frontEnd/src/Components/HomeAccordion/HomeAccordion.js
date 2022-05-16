@@ -3,7 +3,7 @@ import { Accordion } from "react-bootstrap";
 import HomeCards from "../HomeCards";
 import { MockData } from "../../Assets/MockData";
 
-import "../HomeAccordion/HomeAccordion.scss";
+import "./HomeAccordion.scss";
 
 const HomeAccordion = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../BottomPageAd/BottomPageAd.scss";
+import "./BottomPageAd.scss";
 
 const BottomPageAd = ({ featureImg, altText, title, body }) => {
   return (

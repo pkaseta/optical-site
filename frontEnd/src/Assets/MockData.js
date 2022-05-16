@@ -1,5 +1,5 @@
-import DetroitSkyline from "../Assets/detroit-skyline.jpeg";
-import ManWithGlasses from "../Assets/man-with-glasses.jpeg";
+import DetroitSkyline from "./detroit-skyline.jpeg";
+import ManWithGlasses from "./man-with-glasses.jpeg";
 
 export const MockData = [
   {

@@ -1,7 +1,7 @@
 import React from "react";
 
 //Styles Import
-import "../Mens/mens.scss";
+import "./mens.scss";
 
 //Data Import
 import { PageData, MockData } from "../../Assets/MockData";
