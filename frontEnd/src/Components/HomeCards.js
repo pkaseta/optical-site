@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Card, Button } from "react-bootstrap";
 import Ratings from "./Ratings/Ratings";
 
@@ -6,9 +7,9 @@ const HomeCards = (product) => {
   return (
     <div className="card-container">
       <Card style={{ width: "18rem" }}>
-        <a href={`../Assets/MockData.js/${product.id}`}>
+        <Link to={`../Assets/MockData.js/${product.id}`}>
           <Card.Img variant="top" src={product.image} />
-        </a>
+        </Link>
         <Card.Body>
           <Card.Title>{product.frameName}</Card.Title>
           <Card.Text>{product.color}</Card.Text>

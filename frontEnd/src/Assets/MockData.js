@@ -10,6 +10,8 @@ export const MockData = [
     color: "Mink/Tortoise Fade",
     rating: 4,
     numReviews: 8,
+    available: true,
+    countInStock: 0,
   },
   {
     _id: 2,
@@ -19,6 +21,8 @@ export const MockData = [
     color: "Tortoise Fade",
     rating: 3.5,
     numReviews: 1,
+    available: false,
+    countInStock: 0,
   },
   {
     _id: 3,
@@ -28,6 +32,8 @@ export const MockData = [
     color: "Grey Tortoise",
     rating: 4.5,
     numReviews: 5,
+    available: true,
+    countInStock: 1,
   },
   {
     _id: 4,
@@ -37,6 +43,8 @@ export const MockData = [
     color: "Khaki",
     rating: 5,
     numReviews: 1,
+    available: true,
+    countInStock: 1,
   },
 ];
 export const PageData = {

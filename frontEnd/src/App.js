@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import Footer from "./Components/Footer/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./Styles/bootstrap.min(2).css";
+import ProductScreen from "./Pages/ProductScreen/ProductScreen";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="mens" element={<Mens />} />
+          <Route path="Assets/MockData.js/:id" element={<ProductScreen />} />
         </Routes>
       </BrowserRouter>
       <Footer />
