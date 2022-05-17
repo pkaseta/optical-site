@@ -1,0 +1,67 @@
+import bcrypt from "bcryptjs";
+
+const users = [
+  {
+    firstName: "Admin",
+    middleInitial: "A",
+    lastName: "User",
+    dob: "12/24/1984",
+    email: "kasetapaul@gmail.com",
+    password: bcrypt.hashSync("123456", 10),
+    isAdmin: true,
+    rx: {
+      odSph: -1.0,
+      osSph: -1.0,
+      odCyl: -1.25,
+      osCyl: -1.25,
+      odAxis: 150,
+      osAxis: 90,
+      odAdd: 0,
+      osAdd: 0,
+      odPD: 32,
+      osPD: 32,
+    },
+  },
+  {
+    firstName: "John",
+    middleInitial: "A",
+    lastName: "Doh",
+    dob: "01/01/2000",
+    email: "john@example.com",
+    password: bcrypt.hashSync("123456", 10),
+    rx: {
+      odSph: -1.0,
+      osSph: -1.0,
+      odCyl: -1.25,
+      osCyl: -1.25,
+      odAxis: 150,
+      osAxis: 90,
+      odAdd: 0,
+      osAdd: 0,
+      odPD: 32,
+      osPD: 32,
+    },
+  },
+  {
+    firstName: "Jane",
+    middleInitial: "A",
+    lastName: "Doh",
+    dob: "02/02/2000",
+    email: "jane@example.com",
+    password: bcrypt.hashSync("123456", 10),
+    rx: {
+      odSph: -1.0,
+      osSph: -1.0,
+      odCyl: -1.25,
+      osCyl: -1.25,
+      odAxis: 150,
+      osAxis: 90,
+      odAdd: 0,
+      osAdd: 0,
+      odPD: 32,
+      osPD: 32,
+    },
+  },
+];
+
+export default users;

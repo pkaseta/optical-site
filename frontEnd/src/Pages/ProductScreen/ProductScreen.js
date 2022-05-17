@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import Ratings from "../../Components/Ratings/Ratings";
-import { MockData } from "../../Assets/MockData";
 import {
   Button,
   Col,
@@ -12,9 +12,20 @@ import {
 } from "react-bootstrap";
 
 const ProductScreen = () => {
+  const [product, setProduct] = useState([]);
   const { id } = useParams();
-  const product = MockData.find((p) => p._id === Number(id));
-  console.log(product);
+
+  useEffect(() => {
+    const fetchProduct = async () => {
+      const { data } = await axios.get(`/api/products/${id}`);
+
+      setProduct(data);
+    };
+
+    fetchProduct();
+  }, [id]);
+  //   const product = MockData.find((p) => p._id === Number(id));
+  //   console.log(product);
 
   return (
     <div>
